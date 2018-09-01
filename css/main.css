@@ -330,10 +330,10 @@ span.hamburgermenu{
 
 /*#############Mobile##############*/
 
-@media screen and (max-width: 475px){
+@media screen and (max-width: 320px){
      .overlay a {font-size: 20px}
     .overlay .closebtn {
-        font-size: 55px;
+        font-size: 35px;
         top: 15px;
         right: 35px;
     }
@@ -341,16 +341,16 @@ span.hamburgermenu{
         margin-bottom: 2%;
     }
     .overlay-content a{
-        font-size: 45px;
+        font-size: 35px;
     }
     .workContainer{
-        height: 233.5px;
+        height: 133.5px;
     }
     .button{
         padding: 1% 1%;
     }
     .titles{
-        font-size: 30px;
+        font-size: 20px;
     }
     .col-6 ul li{
         font-size: 15px;
@@ -358,40 +358,40 @@ span.hamburgermenu{
         line-height: 2.5rem;
     }
     .col-4 img{
-        width: 46.5px;
+        width: 36.5px;
     }
     .col-3 img{
-        width: 80px;
+        width: 50px;
     }
     .col-3 p{
         font-size: 12pt;
     }
     .asTitles{
-        font-size: 30px;
+        font-size: 20px;
     }
     .col-2{
     margin-top: 100%;
 }
     .workContainer1{
-        height: 267px;
+        height: 167px;
     }
     .workContainer2{
-        height: 267px;
+        height: 167px;
     }
     .workContainer1 h2{
-        font-size: 20px;
+        font-size: 10px;
     }
      .workContainer2 h2{
-        font-size: 20px;
+        font-size: 10px;
     }
     .introText h1{
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 20%;
         padding-left: 0;
         padding-right: 0;
         line-height: 50px;
     }
     .clientwork img {
-        width: 25%;
+        width: 15%;
     }
 }
