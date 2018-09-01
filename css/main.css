@@ -330,7 +330,7 @@ span.hamburgermenu{
 
 /*#############Mobile##############*/
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 475px){
      .overlay a {font-size: 20px}
     .overlay .closebtn {
         font-size: 55px;
@@ -341,16 +341,16 @@ span.hamburgermenu{
         margin-bottom: 2%;
     }
     .overlay-content a{
-        font-size: 55px;
+        font-size: 45px;
     }
     .workContainer{
-        height: 333.5px;
+        height: 233.5px;
     }
     .button{
         padding: 1% 1%;
     }
     .titles{
-        font-size: 45px;
+        font-size: 30px;
     }
     .col-6 ul li{
         font-size: 15px;
@@ -367,31 +367,31 @@ span.hamburgermenu{
         font-size: 12pt;
     }
     .asTitles{
-        font-size: 40px;
+        font-size: 30px;
     }
     .col-2{
     margin-top: 100%;
 }
     .workContainer1{
-        height: 367px;
+        height: 267px;
     }
     .workContainer2{
-        height: 367px;
+        height: 267px;
     }
     .workContainer1 h2{
-        font-size: 30px;
+        font-size: 20px;
     }
      .workContainer2 h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .introText h1{
-        font-size: 45px;
+        font-size: 30px;
         padding-top: 20%;
         padding-left: 0;
         padding-right: 0;
         line-height: 50px;
     }
     .clientwork img {
-        width: 50%;
+        width: 25%;
     }
 }
