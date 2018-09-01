@@ -98,7 +98,7 @@ box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
 /*##################Customstyles##########*/
 
 h1{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-family: 'Gothic A1',sans-serif; 
     font-size: 55pt;
     color: #eb2035;
 }
@@ -108,7 +108,7 @@ h1 a{
 }
 
 h2{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-family: 'Gothic A1',sans-serif; 
     font-size: 40pt;
     font-weight: bold;
     color: #fff;
@@ -304,7 +304,7 @@ span.hamburgermenu{
 }
 
 .overlay a {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: 'Gothic A1',sans-serif;
     font-weight: bold;
     padding: 8px;
     text-decoration: none;
