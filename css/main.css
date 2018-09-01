@@ -1,0 +1,396 @@
+/*######################Defaults############*/
+html{
+    
+}
+nav,
+header,
+footer{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+    
+}
+
+.titles{
+    text-decoration-line: underline;
+    text-decoration-color: #eb2035;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav img{
+    float:right;
+    width: 50px;
+    height: 23px;
+    padding-left: 4%;
+    padding-top: 4%;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.workContainer1{
+    height: 467px;
+    -webkit-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+}
+.workContainer2{
+    height: 450px;
+    -webkit-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+}
+
+
+
+
+
+
+/*##################Customstyles##########*/
+
+h1{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 55pt;
+    color: #eb2035;
+}
+
+h1 a{
+    color: #fff;
+}
+
+h2{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 40pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #fff;
+}
+.asTitles{
+    color: #fff;
+}
+.col-6{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.col-12{
+    margin: auto;
+}
+.clientwork img{
+    width: 50%;
+    margin: auto;
+    -webkit-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+    box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+}
+
+.col-6 ul li{
+    list-style: none;
+    font-size: 30px;
+    color: #fff;
+    line-height: 5rem;
+}
+.col-6 ul{
+    padding: 0;
+}
+.col-4 img{
+    margin: 5%;
+    width: 93px;
+    
+}
+.col-7{
+    margin: auto;
+}
+.col-7 h1{
+    text-align: center;
+    color: #fff;
+}
+.col-7 h3{
+    text-align: left;
+    text-decoration-line: overline;
+    color: #231323;
+}
+.col-7 h4{
+    text-align: left;
+    color: #fff;
+}
+.col-2{
+    margin-top: 35%;
+}
+.socialicon{
+    transition: 0.5s;
+}
+.socialicon:hover{
+    transition: 0.5s;
+    transform: scale(1.15);
+}
+.col-12 a button{
+    margin-top: 5%;
+}
+.col-3 img{
+    width: 160px;
+    padding-bottom: 1%;
+}
+.row .col-3{
+    margin-top: 10%;
+}
+button{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-radius: 40px;
+    background-color: #eb2035;
+    padding: 2% 6%;
+    margin: auto;
+    border: 0;
+    -webkit-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+    box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
+    -webkit-animation: pulse 1s infinite;
+    
+}
+button:hover{
+    -webkit-animation: none;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(170, 5, 22, 0);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(170, 5, 22, 0);
+  }
+}
+.nav{
+    padding-top: 4%;
+    padding-left: 4%;
+}
+span.hamburgermenu{
+    font-size: 30px;
+    width: 56pt;
+    height: 52;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+}
+
+.introText{
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+    overflow: hidden;    
+}
+.workContainer1{
+    background-image: url("aloestones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    transition: 0.5s;
+}
+.workContainer2{
+    background-image: url("alexa's.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    transition: 0.5s;
+}
+.workContainer1:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.workContainer2:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+#contacts{
+    margin-top: 5%;
+}
+
+/*################Nav#############*/
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#231323,#6B396B,#EB2035);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 55px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #EB2035;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 55px;
+}
+
+ 
+
+/*#############Mobile##############*/
+
+@media screen and (max-width: 680px){
+     .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 55px;
+        top: 15px;
+        right: 35px;
+    }
+    .container{
+        margin-bottom: 2%;
+    }
+    .overlay-content a{
+        font-size: 55px;
+    }
+    .workContainer{
+        height: 333.5px;
+    }
+    .button{
+        padding: 1% 1%;
+    }
+    .titles{
+        font-size: 45px;
+    }
+    .col-6 ul li{
+        font-size: 15px;
+        margin: auto;
+        line-height: 2.5rem;
+    }
+    .col-4 img{
+        width: 46.5px;
+    }
+    .col-3 img{
+        width: 80px;
+    }
+    .col-3 p{
+        font-size: 12pt;
+    }
+    .asTitles{
+        font-size: 40px;
+    }
+    .col-2{
+    margin-top: 100%;
+}
+    .workContainer1{
+        height: 367px;
+    }
+    .workContainer2{
+        height: 367px;
+    }
+    .workContainer1 h2{
+        font-size: 30px;
+    }
+     .workContainer2 h2{
+        font-size: 30px;
+    }
+    .introText h1{
+        font-size: 45px;
+        padding-top: 20%;
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 50px;
+    }
+    .clientwork img {
+        width: 50%;
+    }
+}
