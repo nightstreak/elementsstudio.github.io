@@ -344,7 +344,7 @@ span.hamburgermenu{
         font-size: 35px;
     }
     .workContainer{
-        height: 133.5px;
+        height: 83.5px;
     }
     .button{
         padding: 1% 1%;
@@ -373,10 +373,10 @@ span.hamburgermenu{
     margin-top: 100%;
 }
     .workContainer1{
-        height: 167px;
+        height: 117px;
     }
     .workContainer2{
-        height: 167px;
+        height: 117px;
     }
     .workContainer1 h2{
         font-size: 10px;
@@ -392,6 +392,6 @@ span.hamburgermenu{
         line-height: 50px;
     }
     .clientwork img {
-        width: 15%;
+        width: 10%;
     }
 }
