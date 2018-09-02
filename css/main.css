@@ -100,8 +100,8 @@ box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
 h1{
     font-family: 'Montserrat',sans-serif; 
     font-size: 55pt;
-    font-weight: 900;
-    color: #eb2035;
+    color: #fff;
+    z-index: 1;
 }
 
 h1 a{
@@ -111,7 +111,7 @@ h1 a{
 h2{
     font-family: 'Montserrat',sans-serif; 
     font-size: 40pt;
-    font-weight: 900;
+    font-weight: bold;
     color: #fff;
 }
 
@@ -184,17 +184,14 @@ p{
 .col-12 a button{
     margin-top: 5%;
 }
-.col-3 img{
-    width: 160px;
-    padding-bottom: 1%;
-}
+
 .row .col-3{
     margin-top: 10%;
 }
 button{
     display: block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -245,14 +242,25 @@ span.hamburgermenu{
     color: #fff;
     cursor: pointer;
     position: fixed;
+    z-index: 1;
+    
 }
 
 .introText{
     height: 100%;
-    margin: auto;
-    text-align: center;
-    padding: 10%;
-    overflow: hidden;    
+    text-align: left;
+    overflow: hidden;
+    z-index: 1;
+}
+.introText p{
+    
+}
+.introText hr{
+    margin-right: 70%;
+    width: 100px;
+    height: 2px;
+    border-color: #EB2035;
+    background-color: #EB2035;
 }
 .workContainer1{
     background-image: url("aloestones.png");
@@ -305,11 +313,11 @@ span.hamburgermenu{
 }
 
 .overlay a {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 900;
+    font-family: 'Monsterrat',sans-serif;
+    font-weight: bold;
     padding: 8px;
     text-decoration: none;
-    font-size: 55px;
+    font-size: 45px;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -329,69 +337,90 @@ span.hamburgermenu{
  
 
 /*#############Mobile##############*/
-
-@media screen and (max-width: 320px){
-     .overlay a {font-size: 20px}
+@media screen and (max-width: 475px){
+     .overlay a {font-size: 15px}
     .overlay .closebtn {
-        font-size: 35px;
+        font-size: 45px;
         top: 15px;
         right: 35px;
     }
     .container{
         margin-bottom: 2%;
+        overflow: hidden;
+    }
+    .col-12{
+        overflow: hidden;
     }
     .overlay-content a{
-        font-size: 35px;
+        font-size: 40px;
     }
     .workContainer{
-        height: 83.5px;
+        height: 333.5px;
     }
-    .button{
-        padding: 1% 1%;
+    button{
+        margin-left: 0;
+        width: 50%;
+        height: 50%;
+        padding: 5%;
+        font-size: 12pt;
     }
     .titles{
-        font-size: 20px;
+        font-size: 45px;
     }
     .col-6 ul li{
         font-size: 15px;
         margin: auto;
         line-height: 2.5rem;
     }
+    
+    .topic{
+        width: 100%;
+    }
+    .socialicons{
+        display: block;
+        width: 100%;
+        margin-top: 50%;
+        margin-left: 60%;
+        overflow: hidden;
+       
+    }
+    .col-1{
+        margin-left: 10%;
+    }
+    .icon img {
+        width:100%;
+    }
+    .col-10{
+        margin-left: 5%;
+        margin-top: 50%;
+        overflow: hidden;
+       
+    }
+    .col-10 img{
+        margin-left: 0;
+        
+    }
     .col-4 img{
-        width: 36.5px;
+        width: 46.5px;
     }
-    .col-3 img{
-        width: 50px;
-    }
+    
     .col-3 p{
         font-size: 12pt;
     }
-    .asTitles{
-        font-size: 20px;
-    }
-    .col-2{
-    margin-top: 100%;
+    
+    .introText hr{
+    margin-right: 70%;
+    width: 100px;
+    height: 2px;
+    border-color: #EB2035;
+    background-color: #EB2035;
 }
-    .workContainer1{
-        height: 117px;
-    }
-    .workContainer2{
-        height: 117px;
-    }
-    .workContainer1 h2{
-        font-size: 10px;
-    }
-     .workContainer2 h2{
-        font-size: 10px;
-    }
     .introText h1{
-        font-size: 20px;
+        font-size: 45px;
         padding-top: 20%;
         padding-left: 0;
         padding-right: 0;
         line-height: 50px;
-    }
-    .clientwork img {
-        width: 10%;
+        text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.74);
     }
 }
