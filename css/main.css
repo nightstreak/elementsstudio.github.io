@@ -375,12 +375,15 @@ span.hamburgermenu{
     
     .topic{
         width: 100%;
+        position: absolute;
+        margin-right: 100%;
+        z-index: -1;
     }
     .socialicons{
         display: block;
         width: 100%;
         margin-top: 50%;
-        margin-left: 60%;
+        margin-left: 20%;
         overflow: hidden;
        
     }
