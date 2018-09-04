@@ -29,7 +29,6 @@ body{
     margin: auto;
     padding-top: 4%;
     padding-bottom: 4%;
-    text-align: center;
     
 }
 
@@ -117,7 +116,7 @@ h2{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: bold;
     color: #fff;
 }
@@ -313,7 +312,7 @@ span.hamburgermenu{
 }
 
 .overlay a {
-    font-family: 'Monsterrat',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     padding: 8px;
     text-decoration: none;
@@ -346,10 +345,9 @@ span.hamburgermenu{
     }
     .container{
         margin-bottom: 2%;
-        overflow: hidden;
+
     }
     .col-12{
-        overflow: hidden;
     }
     .overlay-content a{
         font-size: 40px;
@@ -358,11 +356,10 @@ span.hamburgermenu{
         height: 333.5px;
     }
     button{
-        margin-left: 0;
-        width: 50%;
-        height: 50%;
-        padding: 5%;
-        font-size: 12pt;
+        width: 25%;
+        height: 25%;
+        padding: 1.5%;
+        font-size: 5pt;
     }
     .titles{
         font-size: 45px;
@@ -374,29 +371,28 @@ span.hamburgermenu{
     }
     
     .topic{
-        width: 100%;
+        display: block;
         position: absolute;
+        width: 70%;
         margin-right: 100%;
         z-index: -1;
     }
     .socialicons{
+        position: fixed;
         display: block;
         width: 100%;
-        margin-top: 50%;
-        margin-left: 20%;
-        overflow: hidden;
+        margin-top: 20%;
        
     }
     .col-1{
         margin-left: 10%;
     }
     .icon img {
-        width:100%;
+        width: 50%;
     }
     .col-10{
         margin-left: 5%;
-        margin-top: 50%;
-        overflow: hidden;
+        margin-top: 29%;
        
     }
     .col-10 img{
@@ -412,18 +408,22 @@ span.hamburgermenu{
     }
     
     .introText hr{
-    margin-right: 70%;
-    width: 100px;
+    margin-right: 80%;
+    margin-bottom: -5%;
+    width: 50px;
     height: 2px;
     border-color: #EB2035;
     background-color: #EB2035;
+    z-index: 1;
 }
     .introText h1{
-        font-size: 45px;
+        margin-top: 25%;
+        font-size: 20px;
         padding-top: 20%;
         padding-left: 0;
         padding-right: 0;
-        line-height: 50px;
+        line-height: 25px;
         text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.74);
+        z-index: 1;
     }
 }
