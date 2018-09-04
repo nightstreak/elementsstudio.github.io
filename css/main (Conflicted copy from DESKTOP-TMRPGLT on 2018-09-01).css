@@ -19,25 +19,23 @@ body{
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    overflow: auto;
-  -webkit-scroll-snap-points-y: repeat(100%);
-      -ms-scroll-snap-points-y: repeat(100%);
-          scroll-snap-points-y: repeat(100%);
-  -webkit-scroll-snap-type: mandatory;
-      -ms-scroll-snap-type: mandatory;
-          scroll-snap-type: mandatory;
-  -webkit-scroll-snap-destination: 100% 0%;
-      -ms-scroll-snap-destination: 100% 0%;
-          scroll-snap-destination: 100% 0%;
     
 }
-
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.wrapper img{
+    z-index: -1;
+}
 
 .container{
-    width: 100vw;
-    height: 100vh;
-    top:0;
+    width: 100%;
+    height: 100%;
     margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
     
 }
 
@@ -106,10 +104,9 @@ box-shadow: 0px -1px 73px 5px rgba(0,0,0,0.49);
 /*##################Customstyles##########*/
 
 h1{
-    font-family: 'Montserrat',sans-serif; 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     font-size: 55pt;
     color: #fff;
-    z-index: 1;
 }
 
 h1 a{
@@ -117,7 +114,7 @@ h1 a{
 }
 
 h2{
-    font-family: 'Montserrat',sans-serif; 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     font-size: 40pt;
     font-weight: bold;
     color: #fff;
@@ -125,7 +122,7 @@ h2{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
+    font-size: 16pt;
     font-weight: bold;
     color: #fff;
 }
@@ -192,14 +189,17 @@ p{
 .col-12 a button{
     margin-top: 5%;
 }
-
+.col-3 img{
+    width: 160px;
+    padding-bottom: 1%;
+}
 .row .col-3{
     margin-top: 10%;
 }
 button{
     display: block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -250,25 +250,18 @@ span.hamburgermenu{
     color: #fff;
     cursor: pointer;
     position: fixed;
-    z-index: 1;
-    
 }
 
 .introText{
     height: 100%;
     text-align: left;
-    overflow: hidden;
-    z-index: 1;
+    padding: 10%;
+    overflow: hidden;    
 }
 .introText p{
-    
-}
-.introText hr{
-    margin-right: 70%;
-    width: 100px;
-    height: 2px;
-    border-color: #EB2035;
-    background-color: #EB2035;
+    color: #fff;
+    font-family: 14pt;
+    text-decoration-line: overline;
 }
 .workContainer1{
     background-image: url("aloestones.png");
@@ -321,11 +314,11 @@ span.hamburgermenu{
 }
 
 .overlay a {
-    font-family: 'Montserrat',sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bold;
     padding: 8px;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 55px;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -345,30 +338,25 @@ span.hamburgermenu{
  
 
 /*#############Mobile##############*/
-@media screen and (max-width: 475px){
-     .overlay a {font-size: 15px}
+
+@media screen and (max-width: 680px){
+     .overlay a {font-size: 20px}
     .overlay .closebtn {
-        font-size: 45px;
+        font-size: 55px;
         top: 15px;
         right: 35px;
     }
     .container{
         margin-bottom: 2%;
-
-    }
-    .col-12{
     }
     .overlay-content a{
-        font-size: 40px;
+        font-size: 55px;
     }
     .workContainer{
         height: 333.5px;
     }
-    button{
-        width: 25%;
-        height: 25%;
-        padding: 1.5%;
-        font-size: 5pt;
+    .button{
+        padding: 1% 1%;
     }
     .titles{
         font-size: 45px;
@@ -378,61 +366,41 @@ span.hamburgermenu{
         margin: auto;
         line-height: 2.5rem;
     }
-    
-    .topic{
-        display: block;
-        position: absolute;
-        width: 70%;
-        margin-right: 100%;
-        z-index: -1;
-    }
-    .socialicons{
-        position: fixed;
-        display: block;
-        width: 100%;
-        margin-top: 20%;
-       
-    }
-    .col-1{
-        margin-left: 10%;
-    }
-    .icon img {
-        width: 50%;
-    }
-    .col-10{
-        margin-left: 5%;
-        margin-top: 29%;
-       
-    }
-    .col-10 img{
-        margin-left: 0;
-        
-    }
     .col-4 img{
         width: 46.5px;
     }
-    
+    .col-3 img{
+        width: 80px;
+    }
     .col-3 p{
         font-size: 12pt;
     }
-    
-    .introText hr{
-    margin-right: 80%;
-    margin-bottom: -5%;
-    width: 50px;
-    height: 2px;
-    border-color: #EB2035;
-    background-color: #EB2035;
-    z-index: 1;
+    .asTitles{
+        font-size: 40px;
+    }
+    .col-2{
+    margin-top: 100%;
 }
+    .workContainer1{
+        height: 367px;
+    }
+    .workContainer2{
+        height: 367px;
+    }
+    .workContainer1 h2{
+        font-size: 30px;
+    }
+     .workContainer2 h2{
+        font-size: 30px;
+    }
     .introText h1{
-        margin-top: 25%;
-        font-size: 20px;
+        font-size: 45px;
         padding-top: 20%;
         padding-left: 0;
         padding-right: 0;
-        line-height: 25px;
-        text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.74);
-        z-index: 1;
+        line-height: 50px;
+    }
+    .clientwork img {
+        width: 50%;
     }
 }
