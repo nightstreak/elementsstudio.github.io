@@ -1,101 +1,87 @@
-<!doctype html>
-<html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Elements Studio</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="//fonts.googleapis.com/css?family= Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="icon" type="image/png" href="imgs/favicon.png">
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fullpage.js demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+  
 </head>
-<body background= home-background.png>
 
-        <div class = "nav">
-            <span class ="hamburgermenu" onclick="openNav()">&#9776;</span>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#" onclick="closeNav()">HOME</a>
-                <a href="#work" onclick="closeNav()">WORK</a>
-                <a href="#services" onclick="closeNav()">SERVICES</a>
-                <a href="#aboutme" onclick="closeNav()">ABOUT ME</a>
-                <a href="#contacts" onclick="closeNav()">CONTACTS</a>
-              </div>
-            </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                    <div class="col-10">
-                        <img class ="topic" src=imgs/me%20(Conflicted%20copy%20from%20DESKTOP-TMRPGLT%20on%202018-09-01).png>
-                        <div class="introText">
-                            <h1>THAPELO MARUMO</h1>
-                            <hr>
-                            <p>designer and<br>web developer</p>
-                            <a><button>LEARN MORE</button></a>
-                        </div>
-                </div>
-                <div class = "socialicons">
-                <div class="row">
-                        <div class="col-1">
-                            <a class="icon" href="https://twitter.com/elementsstudio_"><img src ="imgs/twitter.svg"></a>
-                        </div>
-                         <div class="col-1">
-                             <a class="icon" href="https://www.instagram.com/elements_studio101/"><img src ="imgs/instagram.svg"></a>
-                        </div>
-                         <div class="col-1">
-                             <a class="icon" href="https://www.behance.net/prumo10184ae"><img src ="imgs/behance.svg"></a>
-                        </div>
-                         <div class="col-1">
-                             <a class="icon" href="mailto:elementsdesign101@gmail.com"><img src ="imgs/email.svg"></a>
-                        </div>
-                </div>
-            </div>
-            </div>
+<body>
 
-        </div>
-    </div>
-      <div class="container">
-        <div class="row">
-            <div class="col-12">
-                    <div class="col-10">
-                        <img class ="topic" src=imgs/me%20(Conflicted%20copy%20from%20DESKTOP-TMRPGLT%20on%202018-09-01).png>
-                        <div class="introText">
-                            <h1>ALOESTONES</h1>
-                            <hr>
-                            <p>logo design and<br>branding</p>
-                            <a><button>SHOW ME MORE</button></a>
-                        </div>
-                </div>
-                <div class = "socialicons">
-                <div class="row">
-                        <div class="col-1">
-                            <a class="icon" href="https://twitter.com/elementsstudio_"><img src ="imgs/twitter.svg"></a>
-                        </div>
-                         <div class="col-1">
-                             <a class="icon" href="https://www.instagram.com/elements_studio101/"><img src ="imgs/instagram.svg"></a>
-                        </div>
-                         <div class="col-1">
-                             <a class="icon" href="https://www.behance.net/prumo10184ae"><img src ="imgs/behance.svg"></a>
-                        </div>
-                         <div class="col-1">
-                             <a class="icon" href="mailto:elementsdesign101@gmail.com"><img src ="imgs/email.svg"></a>
-                        </div>
-                </div>
-            </div>
-            </div>
+  <header>
+  <div class="header-top clearfix">
+    <a class="l-left" href="#firstSection"><img src="img/logo.svg"></a>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
 
-        </div>
+  <nav class="hide">
+    <ul id="menu">
+      <li data-menuanchor="firstSection">
+        <a href="#firstSection" title="First Section">PROJECTS</a>
+      </li>
+      <li data-menuanchor="secondSection">
+        <a href="#secondSection" title="Second Section">ABOUT</a>
+      </li>
+      <li data-menuanchor="thirdSection">
+        <a href="#thirdSection" title="Second Section">CONTACTS</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div id="fullpage">
+  <section class="vertical-scrolling">
+    <div class="firstsection">
+        <a href="#"><h1>ALOESTONES</h1></a>
+        <div class="socials">
+            <table
+               cellspacing= "5">
+                <tr>
+                    <th><a><img src="img/twitter.svg"></a></th>
+                    <th><a><img src="img/twitter.svg"></a></th>
+                    <th><a><img src="img/twitter.svg"></a></th>
+                    <th><a><img src="img/twitter.svg"></a></th>
+                
+                </tr>
+        
+            </table>
     </div>
-   
-<script src="js/main.js"></script>
+    </div>
+  </section>
+  <section class="vertical-scrolling">
+    <div class="secondsection">
+        <a href="#"><h1>ALEXA'S SANDWICH<br>SHOP</h1></a>
+    </div>
+  </section>
+  <section class="vertical-scrolling">
+    <div class="thirdsection">
+        <a href="#"><h1>ELEMENTS STUDIOS</h1></a>
+    </div>
+  </section>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
 </body>
-
-
 
 </html>
