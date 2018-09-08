@@ -210,7 +210,17 @@ nav ul {
 nav li {
 	flex: 1;
 }
-
+.socials table{
+    border-spacing: 0.0px;
+}
+table{
+    display: block;
+    table-layout: fixed;
+    display: block;
+}
+td{
+    width: 100px;
+}
 nav li a {
 	font-size: 70px;
     font-family: 'Montserrat', sans-serif;
@@ -280,30 +290,45 @@ section {
 }
 h1 {
     padding-top: 20%;
-	font-size: 150px;
+	font-size: 100px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     transition: 0.5s;
 }
 .secondsection h1{
-     padding-top:5%;
+     padding-top:15%;
 }
 .thirdsection h1{
-     padding-top:10%;
+     padding-top:25%;
 }
 .firstsection .socials{
     display: flex;
     flex-wrap: wrap;
     
 }
+.secondsection .socials{
+    margin-top: 12%;
+}
+.thirdsection .socials{
+    margin-top: 12%;
+}
 .socials{
-    float: right;
+    margin-top: 15%;
+    margin-left: 80%;
 }
 .socials a img{
-    width: 10%;
-    height: 10%;
+    width: 30%;
+    height: 30%;
+    transition: 0.3s;
 }
-
+.socials table tr td a img:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+.socials table tr td a img:active{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
  h1:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -380,6 +405,10 @@ h1 {
   .scroll-icon {
     display: none;
   }
+    .socials{
+    margin-top: 2.5%;
+    margin-left: 20%;
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -404,4 +433,12 @@ h1 {
 		padding: 3px;
         margin-top:70px;
 	}
+     .socials{
+    margin-top: 2.5%;
+    margin-left: 0;
+    
+}
+    .table{
+        width: 10%;
+    }
 }
