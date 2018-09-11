@@ -28,7 +28,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-up-open-big { display: inline-block; }
+
+.icon-up-open-big { display: block; }
 
 .icon-up-open-big:after {
   content: "a";
@@ -88,7 +89,15 @@
 	transition: opacity, transform 1s, -webkit-transform 1s;
 	transition-delay: 1s;
 }
-
+.wrapper{
+    background-image: url(me.png);
+    background-size: cover;
+    background-position: center;
+}
+.wrapper a{
+    text-decoration: none;
+    text-decoration-color: none;
+}
 
 
 /* RESET-GENERAL STYLES
@@ -140,75 +149,23 @@ h1 a {
 	padding: 0 10px;
 }
 
-.toggle-menu {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	position: relative;
-	top: 10px;
+.header-top a h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 10%;
+    font-size: 20px;
+    transition: 0.3s;
+    
 }
-
-.toggle-menu i {
-	position: absolute;
-	display: block;
-	height: 2px;
-	background: white;
-	width: 30px;
-	left: 10px;
-	transition: all .3s;
+.header-top a h3:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
 }
-
-.toggle-menu i:nth-child(1) {
-	top: 16px;
+.header-top a h3:active{
+    transform: scale(0.9);
 }
-
-.toggle-menu i:nth-child(2) {
-	top: 24px;
-}
-
-.toggle-menu i:nth-child(3) {
-	top: 32px;
-}
-
-.open-menu i:nth-child(1) {
-	top: 25px;
-	-webkit-transform: rotateZ(45deg);
-	        transform: rotateZ(45deg);
-}
-
-.open-menu i:nth-child(2) {
-	background: transparent;
-}
-
-.open-menu i:nth-child(3) {
-	top: 25px;
-	-webkit-transform: rotateZ(-45deg);
-	        transform: rotateZ(-45deg);
-}
-
-nav {
- 	height: 100vh;
-  box-sizing: border-box;
-	position: fixed;
-	top: 70px;
-	width: 100%;
-  transition: all 0.5s;
-}
-
-.open-menu ~ nav {
-	opacity: 1;
- 	padding: 80px 0;
-	z-index: 15;
-	height: 100%;
-}
-
-nav ul {
-	padding: 0 10px;
-	display: flex;
-}
-
-nav li {
-	flex: 1;
+.header-top a{
+    margin-right: 2%;
 }
 .socials table{
     border-spacing: 0.0px;
@@ -216,23 +173,12 @@ nav li {
 table{
     display: block;
     table-layout: fixed;
-    display: block;
 }
 td{
     width: 100px;
 }
-nav li a {
-	font-size: 70px;
-    font-family: 'Montserrat', sans-serif;
-	display: block;
-    margin-top: 150px;
-	padding: 30px;
-	text-align: center;
-	transition: background .3s;
-}
-nav li a:hover{
-    color: #EB2035;
-}
+
+
 
 nav li:nth-child(odd) a,
 body.fp-viewing-fifthSection-1 #menu li:nth-child(5) a {
@@ -293,13 +239,14 @@ h1 {
 	font-size: 100px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     transition: 0.5s;
 }
 .secondsection h1{
      padding-top:15%;
 }
 .thirdsection h1{
-     padding-top:25%;
+     padding-top:20%;
 }
 .firstsection .socials{
     display: flex;
@@ -313,6 +260,8 @@ h1 {
     margin-top: 12%;
 }
 .socials{
+    position: fixed;
+    z-index: 99999;
     margin-top: 15%;
     margin-left: 80%;
 }
@@ -336,6 +285,7 @@ h1 {
  h1:active{
     transform: scale(0.9)
 }
+
 h2 {
 	text-transform: lowercase;
 	font-size: 4em;
@@ -406,9 +356,15 @@ h1 {
     display: none;
   }
     .socials{
-    margin-top: 2.5%;
-    margin-left: 20%;
+    margin-top: 25%;
+    margin-left: 50%;
 }
+    .secondsection .socials{
+        margin-top: 27%
+}
+    .thirdsection .socials{
+        margin-top: 30%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -416,7 +372,7 @@ h1 {
     font-size: 50%;
   }
     h1 {
-    padding-top: 70%;
+    padding-top: 80%;
 	font-size: 40px;
 }
   .secondsection h1{
@@ -434,11 +390,22 @@ h1 {
         margin-top:70px;
 	}
      .socials{
-    margin-top: 2.5%;
+    margin-top: 80%;
     margin-left: 0;
     
 }
-    .table{
-        width: 10%;
+    .secondsection .socials{
+        margin-top: 70%;
     }
+    .thirdsection .socials{
+        margin-top: 73%;
+    }
+    .table{
+        width: 5%;
+    }
+    .socials a img{
+    width: 25%;
+    height: auto;
+    transition: 0.3s;
+}
 }

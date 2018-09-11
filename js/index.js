@@ -27,10 +27,6 @@ $("#fullpage").fullpage({
   menu: "#menu",
 
   afterLoad: function(anchorLink, index) {
-    $header_top.css("background", "rgba(35, 19, 35, 1)");
-    $header_top.css("background-color", "#231323");
-    $nav.css("background", "rgba(35, 19, 35, 1)");
-    $nav.css("background-color", "#231323");
     if (index == 5) {
       $("#fp-nav").hide();
     }
