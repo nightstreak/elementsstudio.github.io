@@ -248,7 +248,7 @@ h1 {
     transition: 0.5s;
 }
 .secondsection h1{
-     padding-top:12%;
+     padding-top:15%;
 }
 .thirdsection h1{
      padding-top:20%;
@@ -259,7 +259,7 @@ h1 {
     
 }
 .secondsection .socials{
-    margin-top: 9%;
+    margin-top: 12%;
 }
 .thirdsection .socials{
     margin-top: 17%;
@@ -291,10 +291,32 @@ h1 {
     transform: scale(0.9)
 }
 
-h2 {
-	text-transform: lowercase;
-	font-size: 4em;
-	margin-bottom: 20px;
+.aboutme {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-decoration-line: overline;
+    font-size: 35pt;
+    color: white;
+    text-decoration-color: #22032C;
+    display: block;
+    padding-right: 100%;
+}
+.aboutsection{
+    height: 70vh;
+}
+.aboutcontent{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+    color: white;
+    padding-top: 5%;
+    
+}
+.contactinput{
+    background-color: transparent;
+    border: 200%;
+    border-color: wheat;
 }
 
 h3 {
